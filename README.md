@@ -11,6 +11,7 @@ It helps women with:
 
 A central **Wellness Root Agent** routes user questions to the right specialized wellness agent to provide accurate, safe, friendly, and supportive answers.
 
+<!-- Thumbnail Image -->
 ![FemMind AI Thumbnail](app/assets/thumbnail.png)
 
 ---
@@ -42,6 +43,7 @@ The result is a **safe and supportive wellness experience for women**.
 FemMind AI uses a multi-agent system designed for clarity, modularity, and scalability.  
 The system consists of one orchestrator (**Wellness Root Agent**) and five specialized wellness agents:
 
+<!-- Architecture Image -->
 ![FemMind AI Architecture](app/assets/architecture.png)
 
 ### 🌿 1. Wellness Root Agent (Orchestrator)
