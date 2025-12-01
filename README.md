@@ -116,7 +116,7 @@ main.py starts the app
 # ⚙️ Installation
 
 Clone the repository:
-git clone https://github.com/yourusername/femmind-ai.git
+git clone https://github.com/uroojzaidi709/femmind-ai/tree/main
 cd femmind-ai
 
 2. Create virtual environment:
