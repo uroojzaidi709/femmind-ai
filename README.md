@@ -1,28 +1,31 @@
-# 🧠 Project Overview - FemMind AI: Women's Wellness Companion
+# 🧠 FemMind AI: Women's Wellness Companion
 
-FemMind AI is an intelligent multi-agent women’s wellness assistant built using the Google Agent Development Kit (ADK).  
+FemMind AI is an intelligent multi-agent women’s wellness assistant built using the **Google Agent Development Kit (ADK)**.  
 It helps women with:
 
-💪 Fitness  
-🧠 Mental Health  
-🍎 Nutrition  
-🌸 Reproductive Health  
-🌿 Lifestyle & General Wellness  
+- 💪 Fitness  
+- 🧠 Mental Health  
+- 🍎 Nutrition  
+- 🌸 Reproductive Health  
+- 🌿 Lifestyle & General Wellness  
 
-A central Wellness Root Agent routes user questions to the right specialized wellness agent to provide accurate, safe, friendly, and supportive answers.
+A central **Wellness Root Agent** routes user questions to the right specialized wellness agent to provide accurate, safe, friendly, and supportive answers.
 
-<!-- Thumbnail Image -->
 ![FemMind AI Thumbnail](app/assets/thumbnail.png)
 
-# 🎯 Problem Statement
+---
+
+## 🎯 Problem Statement
 
 Women often struggle to find trusted, personalized, and friendly guidance about their health and wellness.  
 Information is scattered, confusing, and often not beginner-friendly.
 
-# 💡 Solution Statement
+---
+
+## 💡 Solution Statement
 
 FemMind AI brings all major wellness categories into one place using a powerful multi-agent AI system.  
-Each agent specializes in one domain and works together to give:
+Each agent specializes in one domain and works together to provide:
 
 - Simple health advice  
 - Emotional support  
@@ -30,46 +33,49 @@ Each agent specializes in one domain and works together to give:
 - Nutrition suggestions  
 - Reproductive health awareness  
 
-The result is a safe and supportive wellness experience for women.
+The result is a **safe and supportive wellness experience for women**.
 
-# 🏛️ Architecture
+---
+
+## 🏛️ Architecture
 
 FemMind AI uses a multi-agent system designed for clarity, modularity, and scalability.  
-The system consists of one orchestrator (Wellness Root Agent) and five specialized wellness agents, each responsible for one domain of women’s health:
+The system consists of one orchestrator (**Wellness Root Agent**) and five specialized wellness agents:
 
-## 🌿 1. Wellness Root Agent (Orchestrator)
+![FemMind AI Architecture](app/assets/architecture.png)
+
+### 🌿 1. Wellness Root Agent (Orchestrator)
 - Understands the user’s message  
 - Determines the required wellness domain  
 - Routes the query to the correct sub-agent  
 - Collects and unifies the final response  
 
-## 🍎 2. Nutrition Agent
+### 🍎 2. Nutrition Agent
 - Meal suggestions  
 - Vitamin/mineral guidance  
 - Weight loss/gain food plans  
 - Healthy eating routines  
 
-## 🧠 3. Mental Health Agent
+### 🧠 3. Mental Health Agent
 - Emotional support  
 - Stress and anxiety relief tips  
 - Mindfulness and self-care routines  
 
-## 🌸 4. Reproductive Health Agent
+### 🌸 4. Reproductive Health Agent
 - Menstrual cycle awareness  
 - PMS/PCOS/PCOD education  
 - Hormonal wellness guidance  
 - Pregnancy-related general advice  
 
-## 💪 5. Fitness Agent
+### 💪 5. Fitness Agent
 - Workout routines  
 - Home exercises  
 - Fat loss/muscle gain tips  
 - Beginner-friendly fitness plans  
 
-<!-- Architecture Image -->
-![FemMind AI Architecture](app/assets/architecture.png)
+---
 
-# 🔄 Workflow
+## 🔄 Workflow
 
 1. User sends a message  
 2. Root Agent analyzes intent  
@@ -77,39 +83,39 @@ The system consists of one orchestrator (Wellness Root Agent) and five specializ
 4. Sub-agent generates domain-specific answer  
 5. Root Agent returns the final, unified response  
 
-This ensures accuracy, safety, and a supportive tone.
+This ensures **accuracy, safety, and a supportive tone**.
 
-# 🧩 Project Structure
+---
+
+## 🧩 Project Structure
 
 femmind-ai/
-│
 ├── app/
-│ ├── models/
-│ │ ├── agents.py # Multi-agent AI system
-│ │ ├── memory.py # Memory system with Pandas/NumPy
-│ │ └── init.py
-│ │
-│ ├── routes.py # Flask web interface for chat & analytics
-│ ├── main.py # Entry point
-│ └── assets/
-│ ├── thumbnail.png
-│ └── architecture.png
-│
-├── requirements.txt # Required packages
+│   ├── models/
+│   │   ├── agents.py      # Multi-agent AI system
+│   │   ├── memory.py      # Memory system with Pandas/NumPy
+│   │   └── __init__.py
+│   ├── routes.py          # Flask web interface for chat & analytics
+│   ├── main.py            # Entry point
+│   └── assets/
+│       ├── thumbnail.png
+│       └── architecture.png
+├── requirements.txt       # Required packages
 └── README.md
 
+Notes:
 
-## ✅ Notes
+agents.py contains the multi-agent system and agent logic
 
-- `agents.py` contains the multi-agent system and agent logic  
-- `memory.py` contains the MemorySystem class for storing user interactions and analytics  
-- `routes.py` contains the Flask routes (/, /chat) and web UI  
-- `main.py` starts the app  
+memory.py contains the MemorySystem class for storing user interactions and analytics
+
+routes.py contains the Flask routes (/, /chat) and web UI
+
+main.py starts the app
 
 # ⚙️ Installation
 
-### 1. Clone the repository:
-```bash
+Clone the repository:
 git clone https://github.com/yourusername/femmind-ai.git
 cd femmind-ai
 
@@ -124,17 +130,21 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 # ▶️ Running Locally (Optional)
-1. Start the Flask app:
+
+Start the Flask app:
+
 python main.py
+
 
 Open your browser at:
 http://127.0.0.1:5000
 
-⚠️ Note: This will only work on your local machine. Mainly for developers who want to test or contribute.
+⚠️ This only works on your local machine. Mainly for developers who want to test or contribute.
 
 # 🌐 Live Demo (Recommended)
 
-Try FemMind AI online: https://uroojzaidi.pythonanywhere.com/
+Try FemMind AI online:
+https://uroojzaidi.pythonanywhere.com/
 
 # 🏁 Conclusion
 
@@ -155,11 +165,11 @@ Beautiful web interface with Flask
 
 FemMind AI empowers women with accessible, compassionate, and intelligent wellness support anytime, anywhere.
 
-## 🏷️ GitHub Tags / Badges
+# 🏷️ GitHub Badges
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)  
-![AI](https://img.shields.io/badge/AI-MultiAgent-purple)  
-![Gemini](https://img.shields.io/badge/Google-ADK-orange)  
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![AI](https://img.shields.io/badge/AI-MultiAgent-purple)
+![Gemini](https://img.shields.io/badge/Google-ADK-orange)
 ![Wellness](https://img.shields.io/badge/Women's_Health-pink)
 
 # ✅ Summary
@@ -175,4 +185,3 @@ Pandas/NumPy analytics
 Beautiful Flask UI for interactive chat
 
 Live Demo: https://uroojzaidi.pythonanywhere.com
-
